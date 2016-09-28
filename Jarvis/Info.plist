@@ -62,5 +62,9 @@
 	</array>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Jarvis needs to use your location please...</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

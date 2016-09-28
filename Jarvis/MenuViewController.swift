@@ -43,6 +43,15 @@ class MenuViewController: UIViewController, GuillotineMenu {
         presentingViewController!.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func RemoteButton(_ sender: UIButton) {
+        var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "RemoteVC") as! UINavigationController
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
+    
     @IBAction func closeMenu(_ sender: UIButton) {
         presentingViewController!.dismiss(animated: true, completion: nil)
     }

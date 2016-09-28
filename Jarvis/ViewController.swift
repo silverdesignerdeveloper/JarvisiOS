@@ -21,8 +21,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let navBar = self.navigationController!.navigationBar
-        navBar.barTintColor = UIColor(red: 65.0 / 255.0, green: 62.0 / 255.0, blue: 79.0 / 255.0, alpha: 1)
+        navBar.barTintColor = UIColor.black
         navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UIApplication.shared.statusBarStyle = .lightContent
         
     }
 
@@ -31,10 +32,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //Status bar white color
-    override var preferredStatusBarStyle : UIStatusBarStyle {
-        return .lightContent
-    }
     
     @IBAction func showMenuAction(_ sender: UIButton) {
         let menuViewController = storyboard!.instantiateViewController(withIdentifier: "MenuViewController")

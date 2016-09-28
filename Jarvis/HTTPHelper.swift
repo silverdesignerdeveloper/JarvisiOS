@@ -27,7 +27,11 @@ class HTTPHelp {
         ]
         
         Alamofire.request(postEndpoint, method: .post, parameters: params).response { response in
-            print(response)
+            print(response.response)
+            print(response.data)
+            print(response.request)
+            
+            
             
         }
         

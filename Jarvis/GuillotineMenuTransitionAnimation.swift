@@ -41,7 +41,7 @@ open class GuillotineTransitionAnimation: NSObject {
     open var mode: Mode = .presentation
     open var supportView: UIView?
     open var presentButton: UIView?
-    open var animationDuration = 0.15
+    open var animationDuration = 0.3
     
     //MARK: - Private properties
     fileprivate var chromeView: UIView?
